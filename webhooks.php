@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
-				'replyToken' => $replyToken,
+				'to' => 'U6fd8abbf17325319cf5a6d244ef2bc17',
 				'messages' => [$messages],
 			];
 			$post = json_encode($data);
