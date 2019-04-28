@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 				'text' =>  "type : $type \r\n userId : $userId \r\n roomId : $roomId \r\n groupId : $groupId" 
 			];
 
-			if ($userId == "U6fd8abbf17325319cf5a6d244ef2bc17") 
+			if ($userId == "U294e875f3176da6fb5df01559239d61d") 
 			{
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/push';
