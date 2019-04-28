@@ -29,6 +29,8 @@ if (!is_null($events['events'])) {
 				'text' =>  "type : $type \r\n userId : $userId \r\n roomId : $roomId \r\n groupId : $groupId" 
 			];
 
+			if ($userId == "U6fd8abbf17325319cf5a6d244ef2bc17") 
+			{
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/push';
 			$data = [
@@ -48,6 +50,10 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
+			}
+			else{
+			echo "OK";
+			}
 		}
 	}
 }
